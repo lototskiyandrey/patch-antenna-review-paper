@@ -21,8 +21,22 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{gutton1955flat}
+H.~Gutton and G.~Baissinot, ``Flat aerial for ultra high frequencies,''
+  \emph{French patent}, vol. 703113, 1955.
+
 \bibitem{balanis2016antenna}
 C.~A. Balanis, \emph{Antenna theory: analysis and design}.\hskip 1em plus 0.5em
   minus 0.4em\relax John wiley \& sons, 2016.
+
+\bibitem{khan2015microstrip}
+M.~U. Khan, M.~S. Sharawi, and R.~Mittra, ``Microstrip patch antenna
+  miniaturisation techniques: a review,'' \emph{IET Microwaves, Antennas \&
+  Propagation}, vol.~9, no.~9, pp. 913--922, 2015.
+
+\bibitem{girase2014design}
+N.~Girase, R.~Tiwari, A.~Sharma, and H.~Singh, ``Design and simulation of
+  slotted rectangular microstrip patch antenna,'' \emph{International Journal
+  of Computer Applications}, vol. 103, no.~10, pp. 19--23, 2014.
 
 \end{thebibliography}
