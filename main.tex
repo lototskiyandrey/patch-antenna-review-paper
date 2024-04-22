@@ -66,7 +66,18 @@ As shown in figure 1, a basic patch antenna consists of a very thin metallic str
 
 Numerous dielectric materials are used in PAs. Most of these materials will have dielectric constants in the range of $2.2$ to $12$\cite{balanis2016antenna}. More discussion on the choice of substrate in the antenna will be provided in section 3. 
 \subsection{Radiation Mechanism}
-There are 3 models used to describe the operation of a patch antenna.
+The three most popular model used to describe patch antennas are, the transmission line model, the cavity model, and the full wave model\cite{balanis2016antenna}. Since the transmission line model gives the best visual insight\cite{balanis2016antenna} into patch antenna operation, this model will be used. It should be noted however, that the transmission line model is only valid for rectangular patch antennas, and doesn't give the most accurate results\cite{balanis2016antenna}. As a result, the results from both the cavity wave model, and the full wave model will be included. More information on the cavity model can be found here \cite{balanis2016antenna}.  
+
+\begin{figure}[h]
+    %\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.5\textwidth]{2.4GHz-basic-pa.png}
+    %\end{subfigure}
+    \caption{A basic PA designed in HFSS. This particular PA has been designed to radiate at 2.4 GHz. The green material on top is the patch, with the red material being the substrate. The substrate has a relative permittivity (dielectric constant) of 4.4. There is a ground plane beneath the substrate, although it is not visible here. The entire antenna has dimensions $60 \text{ mm} \times 60 \text{ mm} \times 1.6 \text{ mm}$, in the x,y,z planes, respectively. The patch itself is 29.4 mm long in the x direction, and 38 mm long in the y direction. The thickness of the patch and ground plane is negligible with respect to the substrate thickness. }
+\end{figure}
+
+Figure 3 depicts a basic microstrip patch antenna (MPA) that is designed to radiate at 2.4 GHz. When an RF signal is applied to this antenna, at a 2.4 GHz frequency, the patch antenna will radiate EM waves. Although the antenna can radiate at other frequencies, it will radiate less efficiently at those frequencies. The frequency at which an antenna radiates most efficiently is known as the \textit{resonant frequency} of the antenna. A more technical definition of the resonant frequency of an antenna is the frequency at which the impedence of an antenna is purely resistive, the frequency at which the capacitive and inductive reactances cancel each other out.
+
 \subsection{Properties}
 
 \section{Substrate Loading}
