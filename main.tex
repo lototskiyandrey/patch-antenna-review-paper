@@ -78,13 +78,17 @@ The three most popular model used to describe patch antennas are, the transmissi
 
 Figure 3 depicts a basic microstrip patch antenna (MPA) that is designed to radiate at 2.4 GHz. When an RF signal is applied to this antenna, at a 2.4 GHz frequency, the patch antenna will radiate EM waves. Although the antenna can radiate at other frequencies, it will radiate less efficiently at those frequencies. The frequency at which an antenna radiates most efficiently is known as the \textit{resonant frequency} of the antenna. A more technical definition of the resonant frequency of an antenna is the frequency at which the impedence of an antenna is purely resistive, the frequency at which the capacitive and inductive reactances cancel each other out. 
 
+The exact radiation mechanism for a rectangular patch antenna can be modeled by treating the patch as an open ended transmission line. When a signal passes through the micro-strip and into the patch itself, the signal travels down the length of the patch, and is reflected upon reaching the far end of the patch. The reflected signal is then superpositioned onto the rest of the incoming signal to form a standing wave on the patch.  
+
 \begin{figure}[h]
     %\begin{subfigure}{0.5\textwidth}
     \centering
     \includegraphics[width=0.5\textwidth]{basic-patch-antenna-MagE-on-patch.png}
     %\end{subfigure}
-    \caption{This depicts the same PA from figure 3, with an RF current applied to the patch. The magnitude of the E-field is being shown on the patch, with the RF current applied.}
+    \caption{This depicts the same PA from figure 3, with an RF current applied to the patch. The magnitude of the E-field is being shown on the patch, with the RF current applied. A stronger E-field at some point is represented by a warmer color.}
 \end{figure}
+
+
 
 \subsection{Properties}
 
