@@ -51,6 +51,8 @@ Besides its large size at lower frequencies, a PA with Figure 1's design would h
 
 This paper will use HFSS to provide a visual explanation of the radiation mechanism of a basic PA, as well as show some of its properties. Afterwards, the paper will review some methods which have been used to miniaturize PAs. None of the presented methods will be exceptionally novel, however, the methods are actually used in current patch antennas, and the mechanism behind their operation is fascinating in its own right. Since this is a surface level paper, certain concepts will be introduced without adequate in depth explanation. In these cases, the paper will reference other readings for a more in depth explanation.            
   
+\section{Electromagnetic Radiation}  
+  
 \section{Patch Antenna}
 
 \subsection{Basic Characteristics}
@@ -65,11 +67,12 @@ As shown in figure 1, a basic patch antenna consists of a very thin metallic str
 \end{figure}
 
 Numerous dielectric materials are used in PAs. Most of these materials will have dielectric constants in the range of $2.2$ to $12$\cite{balanis2016antenna}. More discussion on the choice of substrate in the antenna will be provided in section 3. 
-\subsection{Radiation Mechanism}
+\section{Radiation Mechanisms}
 
 The three most popular model used to describe patch antennas are, the transmission line model, the cavity model, and the full wave model\cite{balanis2016antenna}. Since the transmission line model gives the best visual insight\cite{balanis2016antenna} into patch antenna operation, this model will be used. It should be noted however, that the transmission line model is only valid for rectangular patch antennas, and doesn't give the most accurate results\cite{balanis2016antenna}. As a result, the results from both the cavity wave model, and the full wave model will be included. More information on the cavity model can be found here \cite{balanis2016antenna}. 
 
-\subsubsection{E-Field on the Patch}
+
+\section{E-Field on the Patch}
  
 
 \begin{figure}[h]
@@ -104,33 +107,48 @@ As observed in figure 4, the E-field is strongest around the edges of the patch,
 
 Although figure 5 clearly shows that the E-field is strongest at the close and far ends of the patch, and that they mostly point in the direction parallel to the z-axis, it raises another important question: why are the fields pointing in the same direction with respect to the x-axis? To answer this question, consider the E-field near the patch.  
 
-\subsubsection{Near Field Radiation}
+\section{Near Field Radiation}
 
-To better understand the far field radiation pattern of the patch, first consider the E-field pattern around the patch. As demonstrated in figure 5, the edges of the patch contain the strongest E-field. Consider what would happen if the sources of these strong E-fields was fixed. As time passes, the new surrounding space would conform to these E-fields. An important realization is that the two locations where the E-fields are strongest can be modelled as a pair of opposite electric charges. Doing this, it is obvious that at a certain distance the E-field will point from one point of strong E-field, to the other point of strong E-field, as shown in figure 6.
+To better understand the far field radiation pattern of the patch, first consider the E-field pattern around the patch. As demonstrated in figure 5, the edges of the patch contain the strongest E-field. Consider what would happen if the sources of these strong E-fields was fixed. As time passes, the new surrounding space would conform to these E-fields. An important realization is that the two locations where the E-fields are strongest can be modeled as a pair of opposite electric charges. At a certain distance the E-field will point from one point of strong E-field, to the other point of strong E-field, as shown in figure 6.
 
 \begin{figure}[h]
     %\begin{subfigure}{0.5\textwidth}
     \centering
-    \includegraphics[width=0.5\textwidth]{basic-patch-antenna-VecE-onPatch-t0.png}
+    \includegraphics[width=0.5\textwidth]{basic-patch-antenna-near-Efield.png}
     %\end{subfigure}
-    \caption{This shows the E-field near the patch, at a snapshot in time. Observe that at a certain distance the E-field appears to travel from one point of high E-field to the other directly.}
+    \caption{This shows the E-field near the patch, at a snapshot in time. Observe that at a certain distance the E-field appears to travel from one point of high E-field strength to the other. In other words, from a certain distance the overall pattern of the E-field matches the expected pattern of an E-field formed by a positive and negative pair of charges.}
+\end{figure}  
+This connected E-field will extend out towards infinity (assuming that the charges remain fixed), and is crucial to understanding the far field radiation of the antenna. 
+
+\section{Far Field Radiation}
+
+As demonstrated previously, the two opposite E-fields create a surrounding E-field similar to that of an electric dipole. But notice that the E-field on the patch is constantly oscillating back and forth, and so, the 
+
+\begin{figure}[h]
+    \begin{subfigure}{0.5\textwidth}
+    \centering
+    	\includegraphics[width=0.5\textwidth]{basic-patch-antenna-radiating-t0.png}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    \centering
+    	\includegraphics[width=0.5\textwidth]{basic-patch-antenna-radiating-t1.png}
+	\end{subfigure}   
+    \begin{subfigure}{0.5\textwidth}
+    \centering
+    	\includegraphics[width=0.5\textwidth]{basic-patch-antenna-radiating-t2.png}
+	\end{subfigure}    
+    \begin{subfigure}{0.5\textwidth}
+    \centering
+    	\includegraphics[width=0.5\textwidth]{basic-patch-antenna-radiating-t3.png}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    \centering
+    	\includegraphics[width=0.5\textwidth]{basic-patch-antenna-radiating-t4.png}
+    \end{subfigure}
+    \caption{This shows the E-field near the patch, at a snapshot in time. Observe that at a certain distance the E-field appears to travel from one point of high E-field strength to the other. In other words, from a certain distance the overall pattern of the E-field matches the expected pattern of an E-field formed by a positive and negative pair of charges.}
 \end{figure}  
 
-\subsubsection{Far Field Radiation}
-
-
-
-\subsection{Properties}
-
-As has been demonstrated, PAs are highly directive antennas. They radiate the majority of their energy in the direction parallel to the normal of the patch. 
-
-\section{Substrate Loading}
-
-The most straightforward way of miniaturizing a PA is to choose a substrate with an appropriate.
-
-\section{Antenna Geomatry Modification}
-
-Besides modifying the substrate, the other way to miniaturize a PA is to modify the geometry of the patch to make the patch smaller, but still make it able to radiate at the desired freqeuncy.
+\section{Properties}
 
 \section{Conclusion}
 
