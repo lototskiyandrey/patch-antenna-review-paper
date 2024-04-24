@@ -52,7 +52,23 @@ Besides its large size at lower frequencies, a PA with Figure 1's design would h
 This paper will use HFSS to provide a visual explanation of the radiation mechanism of a basic PA, as well as show some of its properties. Afterwards, the paper will review some methods which have been used to miniaturize PAs. None of the presented methods will be exceptionally novel, however, the methods are actually used in current patch antennas, and the mechanism behind their operation is fascinating in its own right. Since this is a surface level paper, certain concepts will be introduced without adequate in depth explanation. In these cases, the paper will reference other readings for a more in depth explanation.            
   
 \section{Electromagnetic Radiation}  
-  
+
+Before discussing patch antennas, it is important to understand how electromagnetic radiation is created in the first place. Unlike light bulbs, which generate light via the energy released by electrons decaying to lower energy levels inside atoms, antennas radiate via a completely different principle.
+
+Consider a pair of positive and negative electric charges, with some distance $d$ between them. For the sake of this example, also suppose that the two charges are somehow held in place. If this didn't happen, then the two charges would immediately attract together. Consider the electric field created by these two charges. As shown in figure 1, the electric field lines go from the positive charge to the negative charge, in a dilpole fashion.
+
+\begin{figure}[h]
+    %\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.3\textwidth]{positive-negative-EField.png}
+    %\end{subfigure}
+    \caption{The electric field around two point charges of equal magnitude, but of opposite sign.}
+\end{figure} 
+
+Now, consider what happens to the E-field around the charge when the charge is moving at some velocity $v$. One would expect that the field around this moving charge would look something like in figure 2, in the reference frame of a stationary observer. This is not correct, even if $v = 0.9c$.
+
+\section{Properties of Alternating Current}
+
 \section{Patch Antenna}
 
 \subsection{Basic Characteristics}
