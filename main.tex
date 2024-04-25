@@ -55,7 +55,9 @@ This paper will use HFSS to provide a visual explanation of the radiation mechan
 
 Before discussing patch antennas, it is important to understand how electromagnetic radiation is created in the first place. Unlike light bulbs, which generate light via the energy released by electrons decaying to lower energy levels inside atoms, antennas radiate via a completely different principle.
 
-Consider a pair of positive and negative electric charges, with some distance $d$ between them. For the sake of this example, also suppose that the two charges are somehow held in place. If this didn't happen, then the two charges would immediately attract together. Consider the electric field created by these two charges. As shown in figure 1, the electric field lines go from the positive charge to the negative charge, in a dilpole fashion.
+First, consider the electric field around some point charge, in some inertial reference frame. The electric field lines will be uniformly distributed, pointing either towards, or away from the source, depending on the charge of the source\cite{schroeder}. Next, consider a case where the charge is moving at some velocity $v_1$, and is then instantaneously accelerated to a higher velocity $v_2$. At this point, the frame of the charge has changed, and the E-field also changes. But since the transfer of information is capped by the speed of light, the change to the E-field must also propagate at the speed of light, resulting in a region which was in the old reference frame, and a region which is in the new reference frame. The E-field lines do not align in these two regions. However, broken, or discontinuous electric field lines are not allowed, as that would violate Gauss's law. As a result, the electric field lines must connect from the frame where the velocity of the charge was $v_1$ to the frame with velocity $v_2$. There is therefore a bend, or kink in the electric field, which propagates to infinity at the speed of light. In this example, the charge accelerated instantaneously from one velocity to the next. This obviously does not happen in reality, but the principle for the bending of the electric field still holds. 
+
+Now consider a pair of positive and negative electric charges, with some distance $d$ between them, also known as a dipole.
 
 \begin{figure}[h]
     %\begin{subfigure}{0.5\textwidth}
@@ -65,7 +67,6 @@ Consider a pair of positive and negative electric charges, with some distance $d
     \caption{The electric field around two point charges of equal magnitude, but of opposite sign.}
 \end{figure} 
 
-Now, consider what happens to the E-field around the charge when the charge is moving at some velocity $v$. One would expect that the field around this moving charge would look something like in figure 2, in the reference frame of a stationary observer. This is not correct, even if $v = 0.9c$.
 
 \section{Properties of Alternating Current}
 
@@ -141,25 +142,26 @@ This connected E-field will extend out towards infinity (assuming that the charg
 As demonstrated previously, the two opposite E-fields create a surrounding E-field similar to that of an electric dipole. But notice that the E-field on the patch is constantly oscillating back and forth, and so, the 
 
 \begin{figure}[h]
+	%\centering
     \begin{subfigure}{0.5\textwidth}
-    \centering
-    	\includegraphics[width=0.5\textwidth]{basic-patch-antenna-radiating-t0.png}
+    %\centering
+    	\includegraphics[width=0.3\textwidth]{basic-patch-antenna-radiating-t0.png}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
-    \centering
-    	\includegraphics[width=0.5\textwidth]{basic-patch-antenna-radiating-t1.png}
+    %\centering
+    	\includegraphics[width=0.3\textwidth]{basic-patch-antenna-radiating-t1.png}
 	\end{subfigure}   
     \begin{subfigure}{0.5\textwidth}
-    \centering
-    	\includegraphics[width=0.5\textwidth]{basic-patch-antenna-radiating-t2.png}
+    %\centering
+    	\includegraphics[width=0.3\textwidth]{basic-patch-antenna-radiating-t2.png}
 	\end{subfigure}    
     \begin{subfigure}{0.5\textwidth}
-    \centering
-    	\includegraphics[width=0.5\textwidth]{basic-patch-antenna-radiating-t3.png}
+    %\centering
+    	\includegraphics[width=0.3\textwidth]{basic-patch-antenna-radiating-t3.png}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
-    \centering
-    	\includegraphics[width=0.5\textwidth]{basic-patch-antenna-radiating-t4.png}
+    %\centering
+    	\includegraphics[width=0.3\textwidth]{basic-patch-antenna-radiating-t4.png}
     \end{subfigure}
     \caption{This shows the E-field near the patch, at a snapshot in time. Observe that at a certain distance the E-field appears to travel from one point of high E-field strength to the other. In other words, from a certain distance the overall pattern of the E-field matches the expected pattern of an E-field formed by a positive and negative pair of charges.}
 \end{figure}  
