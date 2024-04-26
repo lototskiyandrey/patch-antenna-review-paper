@@ -18,13 +18,14 @@
 \usepackage{indentfirst}
 %\usepackage{biblatex}
 \usepackage{titling}
+%\usepackage{subfig}
 
 %Importing the library needed to support code displaying
 \usepackage{listings}
 \usepackage{color}
 \captionsetup{font=small}
 
-\title{Patch Antenna Design and Miniaturization Techniques \\A Qualitative Approach}
+\title{A Qualitative Approach to Patch Antenna Operation}
 \author{Andrey Lototskiy}
 \date{\today}
 
@@ -49,7 +50,7 @@ However, these very rudimentary patch antennas were too large to be effectively 
 
 Besides its large size at lower frequencies, a PA with Figure 1's design would have a narrow frequency band, low efficiency, low power, high Q, poor polarization purity, and spurious feed radiation\cite{balanis2016antenna}. Fortunately, significant effort has gone into addressing these limitations, and a variety of design techniques to mitigate these limitations have been created\cite{balanis2016antenna}. Furthermore, PAs have also been investigated theoretically, and theories to describe the operating mechanism of most PAs have been created. However, the theories describing PA operation are mathematically dense, and are quite challenging to read. This unapproachability in theory leads to obfuscation on both the theory of PA operation, and research associated with it. One of the most intuitive high level ways of describing antennas is visually. While antenna simulation software does exist, it seems like nobody has used it provide a surface level introduction to patch antennas. This paper intends to do so, using the antenna simulation software known as HFSS, by Ansys. HFSS is a 3D electro-magnetic field simulator, used by RF engineers to design antennas, but it can also be used to visualize the fields in patch antennas, thereby giving an intuitive explanation of why certain antenna designs work, and others don't.
 
-This paper will use HFSS to provide a visual explanation of the radiation mechanism of a basic PA, as well as show some of its properties. Afterwards, the paper will review some methods which have been used to miniaturize PAs. None of the presented methods will be exceptionally novel, however, the methods are actually used in current patch antennas, and the mechanism behind their operation is fascinating in its own right. Since this is a surface level paper, certain concepts will be introduced without adequate in depth explanation. In these cases, the paper will reference other readings for a more in depth explanation.            
+This paper will first provide a theoretical overview of how antennas in general emit radiation, as well as explain the properties of AC current that allow for radiation to be created. Next this paper will use HFSS to provide a visual explanation of the radiation mechanism of a basic PA, as well as show some of its properties. None of the presented methods will be exceptionally novel, however, the methods are actually used in current patch antennas, and the mechanism behind their operation is fascinating in its own right. Since this is a surface level paper, certain concepts will be introduced without adequate in depth explanation. In these cases, the paper will reference other readings for a more in depth explanation.            
   
 \section{Electromagnetic Radiation}  
 
@@ -57,7 +58,19 @@ Before discussing patch antennas, it is important to understand how electromagne
 
 First, consider the electric field around some point charge, in some inertial reference frame. The electric field lines will be uniformly distributed, pointing either towards, or away from the source, depending on the charge of the source\cite{schroeder}. Next, consider a case where the charge is moving at some velocity $v_1$, and is then instantaneously accelerated to a higher velocity $v_2$. At this point, the frame of the charge has changed, and the E-field also changes. But since the transfer of information is capped by the speed of light, the change to the E-field must also propagate at the speed of light, resulting in a region which was in the old reference frame, and a region which is in the new reference frame. The E-field lines do not align in these two regions. However, broken, or discontinuous electric field lines are not allowed, as that would violate Gauss's law. As a result, the electric field lines must connect from the frame where the velocity of the charge was $v_1$ to the frame with velocity $v_2$. There is therefore a bend, or kink in the electric field, which propagates to infinity at the speed of light. In this example, the charge accelerated instantaneously from one velocity to the next. This obviously does not happen in reality, but the principle for the bending of the electric field still holds. 
 
-Now consider a pair of positive and negative electric charges, with some distance $d$ between them, also known as a dipole.
+\begin{figure}[h]
+    \begin{subfigure}{0.5\textwidth}
+    \centering
+    	\includegraphics[width=0.9\textwidth]{charge-moving-at-v1.png}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+    	\centering
+    	\includegraphics[width=0.9\textwidth]{charge-moving-at-v2.png}
+    \end{subfigure}
+    \caption{The electric field around a point charge at two steps in time. On the left is the electric field around a point charge moving at velocity $v_1$. On the right is the electric field around a point charge which has just instantaneous accelerated to a greater velocity $v_2$. When the charge accelerates, the new electric field lines are no longer align with the old electric field lines. }
+\end{figure} 
+
+Now consider the electric field created by two opposite charges. The E-field points from the positive to the negative charge as shown in figure 3. 
 
 \begin{figure}[h]
     %\begin{subfigure}{0.5\textwidth}
@@ -67,12 +80,25 @@ Now consider a pair of positive and negative electric charges, with some distanc
     \caption{The electric field around two point charges of equal magnitude, but of opposite sign.}
 \end{figure} 
 
+For the sake of simplicity, only consider one electric field line. Next, suppose that the two charges are oscillating towards each other, as shown in figure 4. The charges are moving sinusoidally (simple harmonic motion), so they are constantly experiencing an acceleration. Initially, the E-field points from the positive charge to eh negative charge. As the two charges accelerate towards each other, the E-field starts to kink due to the changing reference frame of the two charges. When the two charges are very close to each other, the E-field is negligible, since the signs of the charges cancel. However, the previous E-field is still propagating outwards, and so the ends of the field lines, which started and ended on the charges, join together to create a closed loop. This loop is the radiation emitted.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.24\textwidth]{dipole-at-t0.png} 
+    \includegraphics[width=0.24\textwidth]{dipole-at-t1.png}
+    \includegraphics[width=0.24\textwidth]{dipole-at-t2.png}
+    \includegraphics[width=0.24\textwidth]{dipole-at-t3.png}
+    \caption{The creation of an electromagnetic wave via the oscillation of a positive and negative charge. Note that this is just the electric portion of the wave. The magnetic portion of the wave is not shown here.}
+\end{figure}
+
+It is important to remember that there is also a magnetic field, which is perpendicular to the electric field. It also may be tempting consider the closed E-field loop as one complete wave. However, observe that the charges have not fully returned to their starting positions, and therefore have not yet completed a full oscillation. For this reason, the one closed field loop shown in figure 4 is actually half of the emitted signal, and the other half will be generated when the charges oscillate back to their original positions. It follows that the wavelength of the radiation emitted is equal to the length between two electric field wave fronts, oriented in the same direction. As such, the rightmost image in figure 4 has one half the wavelength of the radiation emitted by the charges.
 
 \section{Properties of Alternating Current}
 
-\section{Patch Antenna}
+Although the previous example of two oscillating charges was useful to create a conceptual idea of how EM radiation is generated, it is obviously not how EM waves are generated in antennas. To create the oscillating charges, patch antennas exploit a unique property of alternating current (AC). Consider what happens when an AC source is connected to an open circuit. When the current reaches the end of the line, instead of merely dissipating, the current is reflected in the opposite direction which it came. This leads to a standing wave forming on the wire, due to the interference of identical waves traveling in opposite directions. The 
 
-\subsection{Basic Characteristics}
+\section{Patch Antenna Characteristics}
+
 As shown in figure 1, a basic patch antenna consists of a very thin metallic strip (the patch), placed a small fraction of a wavelength above a metallic ground plane. While patches are usually either rectangular or circular\cite{khan2015microstrip}, numerous other shapes have been investigated\cite{balanis2016antenna}. In between the patch, and ground plane, is a dielectric. Dielectrics are electronic insulators which can be polarized by an external electric field. 
 
 \begin{figure}[h]
@@ -84,7 +110,7 @@ As shown in figure 1, a basic patch antenna consists of a very thin metallic str
 \end{figure}
 
 Numerous dielectric materials are used in PAs. Most of these materials will have dielectric constants in the range of $2.2$ to $12$\cite{balanis2016antenna}. More discussion on the choice of substrate in the antenna will be provided in section 3. 
-\section{Radiation Mechanisms}
+\section{Radiation Mechanisms of Patch Antennas}
 
 The three most popular model used to describe patch antennas are, the transmission line model, the cavity model, and the full wave model\cite{balanis2016antenna}. Since the transmission line model gives the best visual insight\cite{balanis2016antenna} into patch antenna operation, this model will be used. It should be noted however, that the transmission line model is only valid for rectangular patch antennas, and doesn't give the most accurate results\cite{balanis2016antenna}. As a result, the results from both the cavity wave model, and the full wave model will be included. More information on the cavity model can be found here \cite{balanis2016antenna}. 
 
@@ -139,36 +165,36 @@ This connected E-field will extend out towards infinity (assuming that the charg
 
 \section{Far Field Radiation}
 
-As demonstrated previously, the two opposite E-fields create a surrounding E-field similar to that of an electric dipole. But notice that the E-field on the patch is constantly oscillating back and forth, and so, the 
+As the standing wave on the patch oscillates back and forth, the resulting oscillations cause ripples in the field near the patch. As the E-field propagates outwards, the standing waves on the patch 
 
+\newpage
 \begin{figure}[h]
-	%\centering
-    \begin{subfigure}{0.5\textwidth}
-    %\centering
-    	\includegraphics[width=0.3\textwidth]{basic-patch-antenna-radiating-t0.png}
-    \end{subfigure}
-    \begin{subfigure}{0.5\textwidth}
-    %\centering
-    	\includegraphics[width=0.3\textwidth]{basic-patch-antenna-radiating-t1.png}
-	\end{subfigure}   
-    \begin{subfigure}{0.5\textwidth}
-    %\centering
-    	\includegraphics[width=0.3\textwidth]{basic-patch-antenna-radiating-t2.png}
-	\end{subfigure}    
-    \begin{subfigure}{0.5\textwidth}
-    %\centering
-    	\includegraphics[width=0.3\textwidth]{basic-patch-antenna-radiating-t3.png}
-    \end{subfigure}
-    \begin{subfigure}{0.5\textwidth}
-    %\centering
-    	\includegraphics[width=0.3\textwidth]{basic-patch-antenna-radiating-t4.png}
-    \end{subfigure}
-    \caption{This shows the E-field near the patch, at a snapshot in time. Observe that at a certain distance the E-field appears to travel from one point of high E-field strength to the other. In other words, from a certain distance the overall pattern of the E-field matches the expected pattern of an E-field formed by a positive and negative pair of charges.}
-\end{figure}  
+    \centering
+    \includegraphics[width=0.4\textwidth]{basic-patch-antenna-radiating-t0.png} 
+    \includegraphics[width=0.4\textwidth]{basic-patch-antenna-radiating-t1.png}
+    \includegraphics[width=0.4\textwidth]{basic-patch-antenna-radiating-t2.png}
+    \includegraphics[width=0.4\textwidth]{basic-patch-antenna-radiating-t3.png}
+    \includegraphics[width=0.4\textwidth]{basic-patch-antenna-radiating-t4.png}
+    \caption{The creation of an electromagnetic wave from a patch antenna, at different points in time.}
+\end{figure} 
 
 \section{Properties}
 
+The simulation shows that patch antennas are broadside radiators, in that they radiate almost all of their energy parallel to the normal of the patch. This leads to patch antennas have a high directivitty. They are generally considered to have moderate gain amongst antennas\cite{khan2015microstrip}. This makes patch antennas useful for situations where the positions of the receiver and transmitter are known, so that the antenna may efficiently transmit power to the destination. 
+\newpage
+\begin{figure}[h]
+    %\begin{subfigure}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.5\textwidth]{basic-patch-antenna-gain.png}
+    %\end{subfigure}
+    \caption{This shows a 3 dimensional polar plot of the gain of the patch antenna described in earlier sections.}
+\end{figure}
+
+Besides their high directivitty, the patch antenna presented here has a very narrow bandwidth. Bandwidth refers to the number of frequencies on which the antenna can efficiently radiate power. This is typical for basic patch antennas\cite{balanis2016antenna}. 
+
 \section{Conclusion}
+
+Patch antennas are
 
 \newpage
 \bibliographystyle{IEEEtran}
