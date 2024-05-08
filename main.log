@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.7)  6 MAY 2024 23:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.7)  7 MAY 2024 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -405,24 +405,24 @@ File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 ) (main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -488,19 +488,19 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 32.
+Package hyperref Info: Link coloring ON on input line 33.
  (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
 \c@lstlisting=\count307
-LaTeX Font Info:    Trying to load font information for U+msa on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
 
 
 (C:\Users\Andrey\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
 
 
 (C:\Users\Andrey\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -509,7 +509,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <patch-antenna-structure.png, id=38, 536.0025pt x 333.245pt>
 File: patch-antenna-structure.png Graphic file (type png)
 <use patch-antenna-structure.png>
-Package pdftex.def Info: patch-antenna-structure.png  used on input line 45.
+Package pdftex.def Info: patch-antenna-structure.png  used on input line 46.
 (pdftex.def)             Requested size: 278.69475pt x 173.26805pt.
 
 [1
@@ -557,103 +557,96 @@ File: dipole-at-t3.png Graphic file (type png)
 <use dipole-at-t3.png>
 Package pdftex.def Info: dipole-at-t3.png  used on input line 90.
 (pdftex.def)             Requested size: 111.4762pt x 124.586pt.
-
-
-LaTeX Warning: Citation `lesic' on page 3 undefined on input line 91.
-
-
-LaTeX Warning: Citation `lesic' on page 3 undefined on input line 91.
-
-[3 <./positive-negative-EField.png> <./dipole-at-t0.png> <./dipole-at-t1.png> <
-./dipole-at-t2.png> <./dipole-at-t3.png>]
-<2.4GHz-basic-pa.png, id=95, 813.79031pt x 425.33907pt>
+ [3 <./positive-negative-EField.png> <./dipole-at-t0.png> <./dipole-at-t1.png> 
+<./dipole-at-t2.png> <./dipole-at-t3.png>]
+<2.4GHz-basic-pa.png, id=98, 813.79031pt x 425.33907pt>
 File: 2.4GHz-basic-pa.png Graphic file (type png)
 <use 2.4GHz-basic-pa.png>
 Package pdftex.def Info: 2.4GHz-basic-pa.png  used on input line 105.
 (pdftex.def)             Requested size: 278.69475pt x 145.66476pt.
-<basic-patch-antenna-MagE-on-patch.png, id=96, 1987.425pt x 903.375pt>
+<basic-patch-antenna-MagE-on-patch.png, id=99, 1987.425pt x 903.375pt>
 File: basic-patch-antenna-MagE-on-patch.png Graphic file (type png)
 <use basic-patch-antenna-MagE-on-patch.png>
 Package pdftex.def Info: basic-patch-antenna-MagE-on-patch.png  used on input l
 ine 115.
 (pdftex.def)             Requested size: 278.69475pt x 126.6784pt.
  [4 <./2.4GHz-basic-pa.png> <./basic-patch-antenna-MagE-on-patch.png>]
-<E-field-onPatch-t0.png, id=105, 1927.95282pt x 560.0925pt>
+<E-field-onPatch-t0.png, id=108, 1927.95282pt x 560.0925pt>
 File: E-field-onPatch-t0.png Graphic file (type png)
 <use E-field-onPatch-t0.png>
 Package pdftex.def Info: E-field-onPatch-t0.png  used on input line 125.
-(pdftex.def)             Requested size: 278.69475pt x 80.95921pt.
-<E-field-onPatch-t1.png, id=106, 1921.1775pt x 564.60938pt>
+(pdftex.def)             Requested size: 362.29977pt x 105.24783pt.
+<E-field-onPatch-t1.png, id=109, 1921.1775pt x 564.60938pt>
 File: E-field-onPatch-t1.png Graphic file (type png)
 <use E-field-onPatch-t1.png>
 Package pdftex.def Info: E-field-onPatch-t1.png  used on input line 126.
-(pdftex.def)             Requested size: 278.69475pt x 81.90503pt.
-<E-field-onPatch-t2.png, id=107, 1922.68312pt x 563.85657pt>
+(pdftex.def)             Requested size: 362.29977pt x 106.47568pt.
+<E-field-onPatch-t2.png, id=110, 1922.68312pt x 563.85657pt>
 File: E-field-onPatch-t2.png Graphic file (type png)
 <use E-field-onPatch-t2.png>
 Package pdftex.def Info: E-field-onPatch-t2.png  used on input line 127.
-(pdftex.def)             Requested size: 278.69475pt x 81.72699pt.
-<E-field-onPatch-t3.png, id=108, 1903.11pt x 563.85657pt>
+(pdftex.def)             Requested size: 362.29977pt x 106.24767pt.
+<E-field-onPatch-t3.png, id=111, 1903.11pt x 563.85657pt>
 File: E-field-onPatch-t3.png Graphic file (type png)
 <use E-field-onPatch-t3.png>
 Package pdftex.def Info: E-field-onPatch-t3.png  used on input line 128.
-(pdftex.def)             Requested size: 278.69475pt x 82.57016pt.
- [5 <./E-field-onPatch-t0.png> <./E-field-onPatch-t1.png> <./E-field-onPatch-t2
-.png> <./E-field-onPatch-t3.png>]
-<patch-antenna-NearEfield-t0.png, id=118, 1936.23375pt x 831.105pt>
+(pdftex.def)             Requested size: 362.29977pt x 107.34035pt.
+<patch-antenna-NearEfield-t0.png, id=112, 1936.23375pt x 831.105pt>
 File: patch-antenna-NearEfield-t0.png Graphic file (type png)
 <use patch-antenna-NearEfield-t0.png>
 Package pdftex.def Info: patch-antenna-NearEfield-t0.png  used on input line 14
-3.
-(pdftex.def)             Requested size: 278.69475pt x 119.62576pt.
-<patch-antenna-NearEfield-t1.png, id=119, 1945.2675pt x 855.195pt>
+2.
+(pdftex.def)             Requested size: 295.41576pt x 126.80356pt.
+<patch-antenna-NearEfield-t1.png, id=113, 1945.2675pt x 855.195pt>
 File: patch-antenna-NearEfield-t1.png Graphic file (type png)
 <use patch-antenna-NearEfield-t1.png>
 Package pdftex.def Info: patch-antenna-NearEfield-t1.png  used on input line 14
-4.
-(pdftex.def)             Requested size: 278.69475pt x 122.51901pt.
-<patch-antenna-NearEfield-t2.png, id=120, 1946.77313pt x 856.70062pt>
+3.
+(pdftex.def)             Requested size: 295.41576pt x 129.86572pt.
+<patch-antenna-NearEfield-t2.png, id=114, 1946.77313pt x 856.70062pt>
 File: patch-antenna-NearEfield-t2.png Graphic file (type png)
 <use patch-antenna-NearEfield-t2.png>
 Package pdftex.def Info: patch-antenna-NearEfield-t2.png  used on input line 14
-5.
-(pdftex.def)             Requested size: 278.69475pt x 122.6432pt.
-<patch-antenna-NearEfield-t3.png, id=121, 1946.02031pt x 852.93657pt>
+4.
+(pdftex.def)             Requested size: 295.41576pt x 129.98978pt.
+<patch-antenna-NearEfield-t3.png, id=115, 1946.02031pt x 852.93657pt>
 File: patch-antenna-NearEfield-t3.png Graphic file (type png)
 <use patch-antenna-NearEfield-t3.png>
 Package pdftex.def Info: patch-antenna-NearEfield-t3.png  used on input line 14
-6.
-(pdftex.def)             Requested size: 278.69475pt x 122.1434pt.
-<basic-patch-antenna-radiating-t0.png, id=122, 1122.44344pt x 871.00406pt>
+5.
+(pdftex.def)             Requested size: 295.41576pt x 129.4707pt.
+ [5 <./E-field-onPatch-t0.png> <./E-field-onPatch-t1.png> <./E-field-onPatch-t2
+.png> <./E-field-onPatch-t3.png>]
+<basic-patch-antenna-radiating-t0.png, id=125, 1122.44344pt x 871.00406pt>
 File: basic-patch-antenna-radiating-t0.png Graphic file (type png)
 <use basic-patch-antenna-radiating-t0.png>
 Package pdftex.def Info: basic-patch-antenna-radiating-t0.png  used on input li
-ne 159.
+ne 158.
 (pdftex.def)             Requested size: 195.08972pt x 151.37805pt.
-<basic-patch-antenna-radiating-t1.png, id=123, 1240.635pt x 907.89188pt>
+<basic-patch-antenna-radiating-t1.png, id=126, 1240.635pt x 907.89188pt>
 File: basic-patch-antenna-radiating-t1.png Graphic file (type png)
 <use basic-patch-antenna-radiating-t1.png>
 Package pdftex.def Info: basic-patch-antenna-radiating-t1.png  used on input li
-ne 160.
-(pdftex.def)             Requested size: 195.08972pt x 142.75821pt.
-<basic-patch-antenna-radiating-t2.png, id=124, 1239.88219pt x 906.38625pt>
+ne 159.
+(pdftex.def)             Requested size: 206.23138pt x 150.9178pt.
+<basic-patch-antenna-radiating-t2.png, id=127, 1239.88219pt x 906.38625pt>
 File: basic-patch-antenna-radiating-t2.png Graphic file (type png)
 <use basic-patch-antenna-radiating-t2.png>
 Package pdftex.def Info: basic-patch-antenna-radiating-t2.png  used on input li
-ne 161.
-(pdftex.def)             Requested size: 195.08972pt x 142.60445pt.
-<basic-patch-antenna-radiating-t3.png, id=125, 1242.14063pt x 907.13907pt>
+ne 160.
+(pdftex.def)             Requested size: 206.23138pt x 150.7505pt.
+<basic-patch-antenna-radiating-t3.png, id=128, 1242.14063pt x 907.13907pt>
 File: basic-patch-antenna-radiating-t3.png Graphic file (type png)
 <use basic-patch-antenna-radiating-t3.png>
 Package pdftex.def Info: basic-patch-antenna-radiating-t3.png  used on input li
-ne 162.
-(pdftex.def)             Requested size: 195.08972pt x 142.47374pt.
-<basic-patch-antenna-radiating-t4.png, id=126, 1243.64626pt x 905.63344pt>
+ne 161.
+(pdftex.def)             Requested size: 206.23138pt x 150.61273pt.
+<basic-patch-antenna-radiating-t4.png, id=129, 1243.64626pt x 905.63344pt>
 File: basic-patch-antenna-radiating-t4.png Graphic file (type png)
 <use basic-patch-antenna-radiating-t4.png>
 Package pdftex.def Info: basic-patch-antenna-radiating-t4.png  used on input li
-ne 163.
-(pdftex.def)             Requested size: 195.08972pt x 142.05762pt.
+ne 162.
+(pdftex.def)             Requested size: 206.23138pt x 150.16928pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -663,15 +656,15 @@ atch-antenna-NearEfield-t2.png> <./patch-antenna-NearEfield-t3.png>] [7 <./basi
 c-patch-antenna-radiating-t0.png> <./basic-patch-antenna-radiating-t1.png> <./b
 asic-patch-antenna-radiating-t2.png> <./basic-patch-antenna-radiating-t3.png> <
 ./basic-patch-antenna-radiating-t4.png>]
-<basic-patch-antenna-gain.png, id=143, 846.16125pt x 893.58844pt>
+<basic-patch-antenna-gain.png, id=146, 846.16125pt x 893.58844pt>
 File: basic-patch-antenna-gain.png Graphic file (type png)
 <use basic-patch-antenna-gain.png>
-Package pdftex.def Info: basic-patch-antenna-gain.png  used on input line 174.
+Package pdftex.def Info: basic-patch-antenna-gain.png  used on input line 173.
 (pdftex.def)             Requested size: 250.82358pt x 264.87436pt.
-<basic-patch-antenna-splot.png, id=146, 2610.00093pt x 889.07156pt>
+<basic-patch-antenna-splot.png, id=149, 2610.00093pt x 889.07156pt>
 File: basic-patch-antenna-splot.png Graphic file (type png)
 <use basic-patch-antenna-splot.png>
-Package pdftex.def Info: basic-patch-antenna-splot.png  used on input line 184.
+Package pdftex.def Info: basic-patch-antenna-splot.png  used on input line 183.
 
 (pdftex.def)             Requested size: 501.64716pt x 170.87888pt.
  [8 <./basic-patch-antenna-gain.png> <./basic-patch-antenna-splot.png>] (main.b
@@ -686,21 +679,17 @@ ram demon-stra-tions project,'' [][]$https : / /
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 157D3FB904A667EADD4D5193C498E1A1;1233.
+(rerunfilecheck)             Checksum: 97898A814885E9DEF20630946FC3E0A9;1233.
  ) 
 Here is how much of TeX's memory you used:
- 14266 strings out of 475247
- 231230 string characters out of 5757321
+ 14268 strings out of 475247
+ 231247 string characters out of 5757321
  1929801 words of memory out of 5000000
- 35586 multiletter control sequences out of 15000+600000
+ 35587 multiletter control sequences out of 15000+600000
  568421 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,79p,1054b,455s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,1052b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Andrey/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbx10.pfb><C:/Users/Andrey/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
 msfonts/cm/cmbx12.pfb><C:/Users/Andrey/AppData/Local/Programs/MiKTeX/fonts/type
@@ -712,9 +701,9 @@ pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/
 Andrey/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
 :/Users/Andrey/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
 i12.pfb>
-Output written on main.pdf (9 pages, 3185131 bytes).
+Output written on main.pdf (9 pages, 3185622 bytes).
 PDF statistics:
- 213 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
+ 220 PDF objects out of 1000 (max. 8388607)
+ 37 named destinations out of 1000 (max. 500000)
  190 words of extra memory for PDF output out of 10000 (max. 10000000)
 
